@@ -8,3 +8,5 @@ This project is a sandbox test app for learning about how to use:
 * SASS
 * TypeScript
 * ... and build it all into a production-ready build process.
+
+To run, k web.
