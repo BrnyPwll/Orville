@@ -1,0 +1,13 @@
+@import '../Bourbon/bourbon';
+
+
+.test {
+  .moo {
+    color: #00ff00;
+  }
+}
+
+
+section {
+  @include linear-gradient(to top, red, orange);
+}
