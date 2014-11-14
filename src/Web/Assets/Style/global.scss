@@ -1,6 +1,4 @@
-@import 'Common/site';
-
-
-body {
-  padding: 20px;
-}
+@import 'Common/normalise';
+@import 'Common/variables';
+@import 'Common/utils';
+@import 'Common/layout';
