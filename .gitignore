@@ -172,6 +172,7 @@ bower_components
 node_modules
 .sass-cache
 */*/wwwroot/style/
+*/*/wwwroot/script/
 
 
 #############
@@ -190,6 +191,3 @@ $RECYCLE.BIN/
 
 # Mac crap
 .DS_Store
-
-
-
