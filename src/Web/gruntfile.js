@@ -24,6 +24,16 @@ module.exports = function(grunt) {
       }
     },
 
+    typescript: {
+      base: {
+        src: ['Assets/Script/cf/**/*.ts'],
+        dest: 'wwwroot/script',
+        options: {
+          basePath: 'Assets/Script'
+        }
+      }
+    },
+
     watch: {
       css: {
         files: 'Assets/Style/**/*.scss',
@@ -32,16 +42,20 @@ module.exports = function(grunt) {
     },
 
 
+
+
   });
 
   grunt.registerTask("default",  [ "bower:install", "sass" ]);
-  grunt.registerTask("dev", ["sass", "watch"]);
+  grunt.registerTask("dev", ["sass"]);
   grunt.registerTask("devwatch", ["watch"]);
+  grunt.registerTask("script", ["typescript"]);
 
 
   grunt.loadNpmTasks("grunt-contrib-sass");
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-bower-task");
+  grunt.loadNpmTasks("grunt-typescript");
 
 
 };
