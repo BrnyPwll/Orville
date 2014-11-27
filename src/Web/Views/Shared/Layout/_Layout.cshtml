@@ -1,0 +1,20 @@
+@model Cheapflights.Meta.Web.ViewModels.PageViewModel
+
+@{
+  Layout = "~/Views/Shared/Layout/_Base.cshtml";
+}
+
+<header>
+  @RenderSection("Header", required: false)
+</header>
+
+<main>
+  @RenderSection("Breadcrumb", required: false)
+  @RenderSection("UpperContent", required: false)
+  @RenderBody()
+  @RenderSection("LowerContent", required: false)
+</main>
+
+<footer>
+  @RenderSection("Footer", required: false)
+</footer>

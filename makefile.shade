@@ -1,0 +1,11 @@
+use namespace="System.Net"
+
+var VERSION='0.1'
+var FULL_VERSION='0.1'
+var AUTHORS='Microsoft Open Technologies, Inc.'
+
+use-standard-lifecycle
+k-standard-goals
+
+#xml-docs-test target='test'
+  k-xml-docs-test

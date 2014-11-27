@@ -22,18 +22,24 @@ button {
 }
 
 body {
+  background-color: $colourBlueDark;
   font-family: $fontDefault;
   font-size: $fontBase;
   line-height: 1.6250em; /* 26px */
   font-weight: 300; // to thicken it a bit, we need to remove font-smoothing
-  color: $colorText;
+  color: $colourText;
 
   @include baseline-grid();
 }
+header {
+  background-color: $colourYellow;
+}
+main {
+  background-color: $colourContent;
+}
 
-pre {
-  background: $colorGrayBackground;
-  padding: 13px;
+footer {
+  color: $colourTextInverted;
 }
 
 .main-container {

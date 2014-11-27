@@ -16,6 +16,20 @@
   $wideGutterWidth: 3.7% !default;
 
   // Defining colors
+  $colourBlueDark: #1c345e !default;
+  $colourYellow: #ffcd00 !default;
+
+  $colourGrayDark: #404040 !default;
+  $colourGrayLight: #eeeeee !default;
+
+
+  $colourText: $colourGrayDark !default;
+  $colourTextInverted: $colourGrayLight !default;
+
+  $colourContent: #ffffff !default;
+
+
+
   $colorBlue: #3372df !default;
   $colorBlueSecondary: lighten($colorBlue, 30%) !default;
   $colorGreen: #0f9d58 !default;
@@ -31,10 +45,8 @@
   $colorGrayBackground: #f0f0f0 !default;
   $colorGrayKeyline: #e0e0e0 !default;
   $colorGray: #737373 !default;
-  $colorGrayLight: #eeeeee !default;
-  $colorGrayDark: #404040 !default;
 
-  $colorText: $colorGrayDark !default;
+
   $colorHighlight: $colorBlue !default;
   $colorWarning: $colorYellowSecondary !default;
   $colorMuted: $colorGray !default;

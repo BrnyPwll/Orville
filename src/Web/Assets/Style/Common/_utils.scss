@@ -53,21 +53,15 @@
       position: relative;
     }
 
-    padding-left: 5%;
-    padding-right: 5%;
     margin-left: auto;
     margin-right: auto;
 
 
     @include medium {
-      padding-left: 4.8%;
-      padding-right: 4.8%;
       max-width: $mediumContainer;
     }
 
     @include wide {
-      padding-left: 4.4%;
-      padding-right: 4.4%;
       max-width: $wideContainer;
     }
   }
