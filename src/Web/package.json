@@ -3,7 +3,9 @@
   "name": "Cheapflights-Meta",
   "description": "Cheapflights Meta Futures",
   "devDependencies": {
+    "bower": "",
     "grunt": "^0.4.5",
+    "grunt-cli": "",
     "typescript": "",
     "grunt-bower-task": "^0.4.0",
     "grunt-contrib-sass": "^0.8.1",
