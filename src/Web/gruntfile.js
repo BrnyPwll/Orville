@@ -48,7 +48,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask("default",  [ "bower:install", "sass" ]);
   grunt.registerTask("dev", ["sass"]);
-  grunt.registerTask("devwatch", ["watch"]);
+  grunt.registerTask("watch", ["watch"]);
   grunt.registerTask("script", ["typescript"]);
 
 
