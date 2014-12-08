@@ -16,6 +16,10 @@
 
         <link rel="stylesheet" href="/style/global.css" />
 
+        @foreach(var stylesheet in Model.Stylesheets) {
+            <link rel="stylesheet" href="@stylesheet" />
+        }
+
         @RenderSection("Head", required: false)
 
     </head>
