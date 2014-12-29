@@ -62,8 +62,8 @@
   $colorPerformanceSecondary: lighten($colorPerformance, 30%) !default;
 
   // Defining font family
-  $fontDefault: Helvetica, Arial, sans-serif !default;
-  $fontHighlight: 'Roboto Condensed', Helvetica, sans-serif !default;
+  $fontDefault: "Droid Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+  $fontHighlight: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
   $fontIcon: 'icons' !default;
 
   // Defining font sizes

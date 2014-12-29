@@ -8,7 +8,7 @@ namespace Cheapflights.Meta.Web.Controllers {
 
       var model = new PageViewModel();
 
-      model.PageTitle = "Paaterino";
+      model.PageTitle = "Cheap Flights";
       return View(model);
     }
   }
