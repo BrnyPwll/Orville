@@ -2,6 +2,9 @@
 
 @{
   Layout = null;
+
+  Model.Scripts.Add("/lib/angular.min.df5bd6d5.js");
+
 }
 
 
@@ -30,6 +33,11 @@
         <![endif]-->
 
         @RenderBody()
+
+
+        @foreach(var script in Model.Scripts) {
+            <script src="@script"></script>
+        }
 
     </body>
 </html>

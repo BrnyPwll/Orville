@@ -18,15 +18,15 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-//    bower: {
-//      install: {
-//        options: {
-//          targetDir: "wwwroot/lib",
-//          layout: "byComponent",
-//          cleanTargetDir: "false"
-//        }
-//      }
-//    },
+    bower: {
+      install: {
+        options: {
+          targetDir: "wwwroot/lib",
+          layout: "byComponent",
+          cleanTargetDir: "true"
+        }
+      }
+    },
 
     bgShell: {
       _defaults: {
@@ -83,6 +83,45 @@ module.exports = function(grunt) {
     },
 
 
+    concat: {
+      libs: {
+        files: [{
+          src: ['wwwroot/lib/angular/*.js', 'wwwroot/lib/angular-*/*.js'],
+          dest: 'wwwroot/lib/angular.js'
+        }]
+      }
+    },
+
+    uglify: {
+      libs: {
+        files: {
+          'wwwroot/lib/angular.min.js': 'wwwroot/lib/angular.js'
+        }
+      }
+    },
+
+    filerev: {
+      options: {
+        algorithm: 'md5',
+        length: 8
+      },
+      libs: {
+        src: 'wwwroot/lib/*.min.js'
+      },
+      images: {
+        src: 'Assets/Images/**/*.{jpg,jpeg,gif,png,webp}',
+        dest: 'wwwroot/images'
+      }
+    },
+
+    filerev_assets: {
+      dist: {
+        options: {
+          cwd:'wwwroot/'
+        }
+      }
+    }
+
   });
 
   require('load-grunt-tasks')(grunt);
@@ -98,8 +137,9 @@ module.exports = function(grunt) {
   //grunt.loadNpmTasks("grunt-bower-task");
   //grunt.loadNpmTasks("grunt-typescript");
 
-  grunt.registerTask('default', ['concurrent']);
+  grunt.registerTask('default', ['bower:install', 'prepare', 'concurrent']);
 
+  grunt.registerTask('prepare', ['concat', 'uglify', 'filerev', 'filerev_assets']);
 
 
 

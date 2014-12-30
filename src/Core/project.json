@@ -1,5 +1,4 @@
 {
-  "webroot":"wwwroot",
   "version":"4.0.0-*",
   "dependencies": {
     "Microsoft.AspNet.Mvc":"6.0.0-beta1",
@@ -12,32 +11,21 @@
     "Microsoft.Framework.ConfigurationModel.Json": "1.0.0-beta1",
     "Microsoft.Framework.CodeGenerators.Mvc": "1.0.0-beta1",
     "Microsoft.Framework.Logging": "1.0.0-beta1",
-    "Microsoft.Framework.Logging.Console": "1.0.0-beta1",
-    "Core": ""
+    "Microsoft.Framework.Logging.Console": "1.0.0-beta1"
   },
   "commands": {
-    "web": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.WebListener --server.urls http://localhost:5000",
-    "kestrel": "Microsoft.AspNet.Hosting --server Kestrel --server.urls http://localhost:5004",
-    "gen": "Microsoft.Framework.CodeGeneration"
   },
   "frameworks": {
     "aspnet50": {},
     "aspnetcore50": {}
   },
   "exclude": [
-    "wwwroot",
-    "node_modules",
-    "bower_components"
   ],
-  "packExclude": [
-    "node_modules",
-    "bower_components",
+  "packExclude": [    
     "**.kproj",
     "**.user",
     "**.vspscc"
   ],
   "scripts": {
-    "postrestore": [ "npm install" ],
-    "prepare": ["grunt prepare" ]
   }
 }

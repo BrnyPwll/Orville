@@ -8,10 +8,12 @@ namespace Cheapflights.Meta.Web.ViewModels {
 
 
 		public List<string> Stylesheets { get; set; }
+		public List<string> Scripts {get;set;}
 
 
     	public PageViewModel(){
     		Stylesheets = new List<string>();
+    		Scripts = new List<string>();
     	}
 
 

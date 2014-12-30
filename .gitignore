@@ -146,6 +146,8 @@ $RECYCLE.BIN/
 ## Content
 */*/wwwroot/style/
 */*/wwwroot/script/
+*/*/wwwroot/lib/
+*/*/wwwroot/images/
 *.sublime-project
 *.sublime-workspace
 src/Web/robocopy-log.txt
